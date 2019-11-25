@@ -1,0 +1,25 @@
+A,B,X=map(int,input().split())
+
+N_max=10**9+1
+N_min=1
+
+
+
+if (A*N_min+B*len(str(N_min)))>X:
+        ans=0
+        print(str(0))
+else:
+    while 1:
+        mean=(N_min+N_max)//2
+        #print(str(mean))
+        
+        if (A*mean+B*len(str(mean)))<=X:
+            N_min=mean
+            
+            
+        else:
+            N_max=mean
+        
+        if N_min+1==N_max:
+            print(str(N_min))
+            break
