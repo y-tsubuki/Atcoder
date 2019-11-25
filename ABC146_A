@@ -1,0 +1,4 @@
+a=input()
+b=['SUN','MON','TUE','WED','THU','FRI','SAT' ]
+index=b.index(a)
+print(str(7-index))

@@ -1,0 +1,13 @@
+a=input()
+b=input()
+
+list='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+ans=[]
+
+for i in range(len(b)):
+    num=(list.index(b[i])+int(a))%26
+    ans.append(list[num])
+    
+ans=''.join(ans)
+
+print(ans)
