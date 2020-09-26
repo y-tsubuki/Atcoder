@@ -21,4 +21,4 @@ for k in range(math.factorial(N)):
     all_dist.append(B)
 ans=sum(all_dist)/len(all_dist)
  
-print(str(ans))
+print(str(ans))#test
